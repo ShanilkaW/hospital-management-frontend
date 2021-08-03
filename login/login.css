@@ -23,7 +23,7 @@
   position: relative;
   top: 25px;
 }
-#logo h1, #logo p {
+#logo h1, #logo #loginForm #shade #form p, #loginForm #shade #form #logo p, #logo p {
   position: relative;
   left: 100px;
   top: 10px;
@@ -35,6 +35,34 @@
   font-size: 15px;
   letter-spacing: 3px;
   font-weight: 600;
+}
+
+#loginForm {
+  position: absolute;
+  z-index: 1;
+  left: 1095px;
+  top: 180px;
+}
+#loginForm #shade {
+  height: 400px;
+  width: 350px;
+  background-color: #FFF;
+  border-radius: 18px;
+}
+#loginForm #shade #form {
+  height: 390px;
+  width: 340px;
+  background-color: #1CA7EC;
+  border-radius: 18px;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+#loginForm #shade #form h1, #loginForm #shade #form p {
+  position: relative;
+  top: 20px;
+  left: 57px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*# sourceMappingURL=login.css.map */
