@@ -1,1 +1,0 @@
-document.getElementById("findPatients").onclick="window.location.href='../find_patients/find_patients.html'";

@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="find_patients.css">
     <title>Find Patients</title>
 </head>
 <body>
-    
+    <div id="sidebar">
+        <img src="../common/imgs/propic.png" alt="profile picture">
+        <h1>Dr. W.D.K.Weerasinghe</h1>
+        <p>An Admin Profile</p>
+        <p>M.B.B.S at University of Colombo</p>
+    </div>
+
+    <div id="header">
+        <img onclick="window.history.back();" id="backIcon" src="../common/icons/backIcon.png" alt="Back Icon">
+        <h1 id="pageHeader">FIND PATIENTS</h1>
+    </div>
+
+    <div id="searchform">
+        <form action="../patient_list/patient_list.html">
+            <label id="nameLabel" for="name">Name</label> <br>
+            <input type="text" id="name" name="name"><br>
+
+            <label id="wardLabel" for="ward">Ward</label><br>
+            <select name="ward" id="ward">
+            <option value="All">All</option>
+            <option value="0023">0023</option>
+            <option value="0024">0024</option>
+            </select><br>
+
+            <label id="sectionLabel" for="section">Section</label><br>
+            <select name="section" id="section">
+            <option value="All">All</option>
+            <option value="Cardialogy">Cardialogy</option>
+            <option value="ENT">ENT</option>
+            </select><br>
+
+            <label id="locationLabel" for="location">Location</label><br>
+            <select name="location" id="location">
+            <option value="All">All</option>
+            <option value="Galle">Galle</option>
+            <option value="Gampaha">Gampaha</option>
+            </select><br>
+
+            <label id="deptLabel" for="dept">Department</label><br>
+            <select name="dept" id="dept">
+            <option value="All">All</option>
+            <option value="Department01">Department 01</option>
+            <option value="Department02">Department 02</option>
+            </select><br>
+
+            <input type="submit" value="FIND" id="find">
+
+        </form>
+    </div>
 </body>
 </html>
