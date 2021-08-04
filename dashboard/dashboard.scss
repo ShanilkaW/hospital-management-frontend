@@ -121,6 +121,7 @@ body{
         background-color: $buttonBackgroundColor;
         border-radius: $buttonBoarderRadius;
         margin-bottom: $buttonMargin;
+        cursor: pointer;
 
         img{
             width: $iconWidth;

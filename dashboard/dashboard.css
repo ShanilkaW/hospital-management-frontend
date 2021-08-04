@@ -89,6 +89,7 @@ body {
   background-color: #1CA7EC;
   border-radius: 15px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 #buttonList #findPatients img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #documents img, #buttonList #directories img, #buttonList #messages img {
   width: 45px;
