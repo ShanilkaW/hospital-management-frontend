@@ -20,7 +20,7 @@ body {
   height: auto;
   position: absolute;
   left: 89px;
-  top: 80px;
+  top: 60px;
   border-style: solid;
   border-color: #1CA7EC;
   border-radius: 50%;
@@ -204,7 +204,7 @@ body {
 @media only screen and (max-width: 450px) {
   #buttonList #findPatients img, #buttonList #documents img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #directories img, #buttonList #messages img {
     left: 50px;
-    top: 5px;
+    top: 7px;
   }
 }
 #buttonList #findPatients h5, #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #directories h5, #buttonList #messages h5 {
@@ -224,10 +224,35 @@ body {
   }
 }
 @media only screen and (max-width: 450px) {
+  #buttonList #messages h5 {
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #directories h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
   #buttonList #documents, #buttonList #appoinments, #buttonList #calender {
     position: relative;
     left: 200px;
     top: -346px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5 {
+    left: 22px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #calender h5 {
+    left: 32px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #appoinments h5 {
+    left: 10px;
   }
 }
 

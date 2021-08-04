@@ -21,7 +21,7 @@ body{
         height: auto;
         position: absolute;
         left: 89px;
-        top: 80px;
+        top: 60px;
         border-style: solid;
         border-color: #1CA7EC;
         border-radius: 50%;
@@ -44,7 +44,6 @@ body{
         text-align: center;
         letter-spacing: 2px;
         font-weight: 400;
-        // background-color: wheat;
     }
 }
 
@@ -87,7 +86,6 @@ body{
             text-align: center;
             letter-spacing: 2px;
             font-weight: 400;
-            // background-color: wheat;
         }
 
         #menu{
@@ -178,11 +176,9 @@ body{
 
     @media only screen and (max-width: 450px){
         left: 0px;
-        // background-color: wheat;
         width: 398px;
         position: relative;
         top: 30px;
-        // display: none;
     } 
 
     #findPatients{
@@ -202,7 +198,6 @@ body{
             border: 3px;
             border-style: solid;
             border-color: #1CA7EC;
-            // background-color: rgb(67, 65, 170);
         } 
 
         img{
@@ -211,11 +206,10 @@ body{
             position: relative;
             left: 20px;
             top: 18%;
-            // background-color: wheat;
+
             @media only screen and (max-width: 450px){
                 left: 50px;
-                top: 5px;
-                // background-color: red;
+                top: 7px;
             } 
         }
 
@@ -226,7 +220,6 @@ body{
             top: -3px;
             font-family: $myFont;
             font-size: 20px;
-            // background-color: wheat;
             
             @media only screen and (max-width: 450px){
                display: block;
@@ -239,10 +232,20 @@ body{
 
     #messages{
         @extend #findPatients;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 30px;
+            } 
+        }
     }
 
     #directories{
         @extend #findPatients;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #documents{
@@ -251,14 +254,30 @@ body{
             position: relative;
             left: 200px;
             top: -346px;
+        }
+
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 22px;
+            } 
         } 
     }
 
     #calender{
         @extend #documents;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 32px;
+            } 
+        }
     }
 
     #appoinments{
         @extend #documents;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 10px;
+            } 
+        }
     }
 }
