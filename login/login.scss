@@ -1,3 +1,6 @@
+body{
+    position: fixed;
+}
 #backgroundImage{
     @media only screen and (max-width: 450px){
         width: 414px;
@@ -14,7 +17,7 @@
             height: auto;
             filter: blur(2px);
             position: absolute;
-            top: -35px;
+            top: -41px;
             left: -380px;
             transform: rotate(-12deg);
         }
