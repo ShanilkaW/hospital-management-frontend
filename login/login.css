@@ -6,7 +6,8 @@
 }
 @media only screen and (max-width: 350px) {
   #backgroundImage img {
-    scale: 0.1;
+    width: 100%;
+    height: auto;
   }
 }
 
