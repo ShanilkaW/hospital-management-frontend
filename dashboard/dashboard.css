@@ -10,12 +10,17 @@ body {
   border-color: #1CA7EC;
   border-radius: 20px;
 }
+@media only screen and (max-width: 450px) {
+  #sidebar {
+    display: none;
+  }
+}
 #sidebar img {
   width: 170px;
   height: auto;
   position: absolute;
   left: 89px;
-  top: 80px;
+  top: 60px;
   border-style: solid;
   border-color: #1CA7EC;
   border-radius: 50%;
@@ -38,6 +43,54 @@ body {
   font-weight: 400;
 }
 
+#mobileOnly {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  #mobileOnly {
+    display: block;
+    width: 398px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+  }
+  #mobileOnly #propic {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 135px;
+    top: 40px;
+    border-style: solid;
+    border-color: #1CA7EC;
+    border-radius: 50%;
+  }
+  #mobileOnly h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 190px;
+    text-align: center;
+  }
+  #mobileOnly p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    position: relative;
+    top: 185px;
+    margin-bottom: -18px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  #mobileOnly #menu {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 5px;
+    top: -40px;
+  }
+}
+
 #header {
   width: 1130px;
   height: 70px;
@@ -49,11 +102,23 @@ body {
   border-color: #1CA7EC;
   border-radius: 20px;
 }
+@media only screen and (max-width: 450px) {
+  #header {
+    left: 0px;
+    width: 390px;
+    border: none;
+  }
+}
 #header #headerLogo, #header #logoText {
   position: relative;
   left: 30px;
   top: 7px;
   width: 45px;
+}
+@media only screen and (max-width: 450px) {
+  #header #headerLogo, #header #logoText {
+    display: none;
+  }
 }
 #header #logoText {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -62,17 +127,35 @@ body {
   margin-top: 2px;
   left: 24px;
 }
+@media only screen and (max-width: 450px) {
+  #header #logoText {
+    display: none;
+  }
+}
 #header #pageHeader {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: absolute;
   left: 450px;
   top: -10px;
 }
+@media only screen and (max-width: 450px) {
+  #header #pageHeader {
+    left: 40%;
+    top: 5px;
+    font-size: 15px;
+  }
+}
 #header #settingsIcon {
   position: absolute;
   left: 1070px;
   top: 10.5px;
   width: 50px;
+}
+@media only screen and (max-width: 450px) {
+  #header #settingsIcon {
+    left: 90%;
+    width: 30px;
+  }
 }
 
 #buttonList {
@@ -83,7 +166,15 @@ body {
   height: 600px;
   align-self: center;
 }
-#buttonList #findPatients, #buttonList #appoinments, #buttonList #calender, #buttonList #documents, #buttonList #directories, #buttonList #messages {
+@media only screen and (max-width: 450px) {
+  #buttonList {
+    left: 0px;
+    width: 398px;
+    position: relative;
+    top: 30px;
+  }
+}
+#buttonList #findPatients, #buttonList #documents, #buttonList #appoinments, #buttonList #calender, #buttonList #directories, #buttonList #messages {
   width: 1000px;
   height: 70px;
   background-color: #1CA7EC;
@@ -91,20 +182,78 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
 }
-#buttonList #findPatients img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #documents img, #buttonList #directories img, #buttonList #messages img {
+@media only screen and (max-width: 450px) {
+  #buttonList #findPatients, #buttonList #documents, #buttonList #appoinments, #buttonList #calender, #buttonList #directories, #buttonList #messages {
+    position: relative;
+    left: 30px;
+    width: 150px;
+    height: 90px;
+    background-color: transparent;
+    border: 3px;
+    border-style: solid;
+    border-color: #1CA7EC;
+  }
+}
+#buttonList #findPatients img, #buttonList #documents img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #directories img, #buttonList #messages img {
   width: 45px;
   height: 45px;
   position: relative;
   left: 20px;
   top: 18%;
 }
-#buttonList #findPatients h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #documents h5, #buttonList #directories h5, #buttonList #messages h5 {
+@media only screen and (max-width: 450px) {
+  #buttonList #findPatients img, #buttonList #documents img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #directories img, #buttonList #messages img {
+    left: 50px;
+    top: 7px;
+  }
+}
+#buttonList #findPatients h5, #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #directories h5, #buttonList #messages h5 {
   display: inline;
   position: relative;
   left: 30px;
   top: -3px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #findPatients h5, #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #directories h5, #buttonList #messages h5 {
+    display: block;
+    top: -25px;
+    left: 18px;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #messages h5 {
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #directories h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #documents, #buttonList #appoinments, #buttonList #calender {
+    position: relative;
+    left: 200px;
+    top: -346px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5 {
+    left: 22px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #calender h5 {
+    left: 32px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #appoinments h5 {
+    left: 10px;
+  }
 }
 
 /*# sourceMappingURL=dashboard.css.map */

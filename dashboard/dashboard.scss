@@ -12,12 +12,16 @@ body{
     border-color: #1CA7EC;
     border-radius: 20px;
 
+    @media only screen and (max-width: 450px){
+        display: none;
+    } 
+
     img{
         width: 170px;
         height: auto;
         position: absolute;
         left: 89px;
-        top: 80px;
+        top: 60px;
         border-style: solid;
         border-color: #1CA7EC;
         border-radius: 50%;
@@ -40,8 +44,59 @@ body{
         text-align: center;
         letter-spacing: 2px;
         font-weight: 400;
-        // background-color: wheat;
     }
+}
+
+#mobileOnly{
+    display: none;
+
+    @media only screen and (max-width: 450px){
+        display: block;
+        width: 398px;
+        height: 300px;
+        position: relative;
+        top: 30px;
+        
+        #propic{
+            width: 120px;
+            height: auto;
+            position: absolute;
+            left: 135px;
+            top: 40px;
+            border-style: solid;
+            border-color: #1CA7EC;
+            border-radius: 50%;
+        }
+
+        h1{
+            font-family: $myFont;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            top: 190px;
+            text-align: center;
+        }
+    
+        p{
+            font-family: $myFont;
+            font-size: 15px;
+            position: relative;
+            top: 185px;
+            margin-bottom: -18px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        #menu{
+            width: 40px;
+            height: auto;
+            position: absolute;
+            left: 5px;
+            top: -40px;
+        }
+        
+    } 
 }
 
 #header{
@@ -55,11 +110,21 @@ body{
     border-color: #1CA7EC;
     border-radius: 20px;
 
+    @media only screen and (max-width: 450px){
+        left: 0px;
+        width: 390px;
+        border: none;
+    } 
+
     #headerLogo{
         position: relative;
         left: 30px;
         top: 7px;
         width: 45px;
+
+        @media only screen and (max-width: 450px){
+            display: none;
+        } 
     }
 
     #logoText{
@@ -69,6 +134,10 @@ body{
         font-size: 10px;
         margin-top: 2px;
         left: 24px;
+
+        @media only screen and (max-width: 450px){
+            display: none;
+        } 
     }
 
     #pageHeader{
@@ -76,6 +145,12 @@ body{
         position: absolute;
         left: 450px;
         top: -10px;
+
+        @media only screen and (max-width: 450px){
+            left: 40%;
+            top: 5px;
+            font-size: 15px;
+        } 
     }
 
     #settingsIcon{
@@ -83,31 +158,15 @@ body{
         left: 1070px;
         top: 10.5px;
         width: 50px;
+
+        @media only screen and (max-width: 450px){
+            left: 90%;
+            width: 30px;
+        } 
     }
 }
 
 #buttonList{
-    // Button background variables
-    $buttonWidth: 1000px;
-    $buttonHeight: 70px;
-    $buttonBackgroundColor: #1CA7EC;
-    $buttonBackgroundOpacity: 56%;
-    $buttonBoarderRadius: 15px;
-    $buttonMargin: 20px;
-
-    // Button icon variables
-    $iconWidth: 45px;
-    $iconHeight: $iconWidth;
-    $iconLeft: 20px;
-    $iconTop: 18%;
-
-    // Button text variables
-    $textLeft: 30px;
-    $textTop: -3px;
-    $textSize: 20px;
-
-    // Button list properties
-    // background-color: wheat;
     position: absolute;
     top: 120px;
     left: 440px;
@@ -115,51 +174,110 @@ body{
     height: 600px;
     align-self: center;
 
+    @media only screen and (max-width: 450px){
+        left: 0px;
+        width: 398px;
+        position: relative;
+        top: 30px;
+    } 
+
     #findPatients{
-        width: $buttonWidth;
-        height: $buttonHeight;
-        background-color: $buttonBackgroundColor;
-        border-radius: $buttonBoarderRadius;
-        margin-bottom: $buttonMargin;
+        width: 1000px;
+        height: 70px;
+        background-color: #1CA7EC;
+        border-radius: 15px;
+        margin-bottom: 20px;
         cursor: pointer;
 
-        img{
-            width: $iconWidth;
-            height: $iconHeight;
+        @media only screen and (max-width: 450px){
             position: relative;
-            left: $iconLeft;
-            top: $iconTop;
-            // background-color: wheat;
+            left: 30px;
+            width: 150px;
+            height: 90px;
+            background-color: transparent;
+            border: 3px;
+            border-style: solid;
+            border-color: #1CA7EC;
+        } 
+
+        img{
+            width: 45px;
+            height: 45px;
+            position: relative;
+            left: 20px;
+            top: 18%;
+
+            @media only screen and (max-width: 450px){
+                left: 50px;
+                top: 7px;
+            } 
         }
 
         h5{
             display: inline;
             position: relative;
-            left: $textLeft;
-            top: $textTop;
+            left: 30px;
+            top: -3px;
             font-family: $myFont;
-            font-size: $textSize;
-            // background-color: wheat;
+            font-size: 20px;
+            
+            @media only screen and (max-width: 450px){
+               display: block;
+               top: -25px;
+               left: 18px;
+               width: fit-content;
+            } 
         }
     }
 
     #messages{
         @extend #findPatients;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 30px;
+            } 
+        }
     }
 
     #directories{
         @extend #findPatients;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #documents{
         @extend #findPatients;
+        @media only screen and (max-width: 450px){
+            position: relative;
+            left: 200px;
+            top: -346px;
+        }
+
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 22px;
+            } 
+        } 
     }
 
     #calender{
-        @extend #findPatients;
+        @extend #documents;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 32px;
+            } 
+        }
     }
 
     #appoinments{
-        @extend #findPatients;
+        @extend #documents;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 10px;
+            } 
+        }
     }
 }
