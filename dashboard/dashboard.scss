@@ -1,3 +1,9 @@
+$myFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+body{
+    position: fixed;
+}
+
 #sidebar{
     width: 350px;
     height: 700px;
@@ -10,7 +16,7 @@
         width: 170px;
         height: auto;
         position: absolute;
-        left: 98px;
+        left: 89px;
         top: 80px;
         border-style: solid;
         border-color: #1CA7EC;
@@ -18,7 +24,7 @@
     }
 
     h1{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: $myFont;
         font-size: 22px;
         letter-spacing: 1px;
         position: relative;
@@ -27,7 +33,7 @@
     }
 
     p{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: $myFont;
         position: relative;
         top: 33%;
         margin-bottom: -18px;
@@ -35,5 +41,47 @@
         letter-spacing: 2px;
         font-weight: 400;
         // background-color: wheat;
+    }
+}
+
+#header{
+    width: 1130px;
+    height: 70px;
+    position: absolute;
+    left: 370px;
+    top: 0px;
+    border: 4px;
+    border-style: solid;
+    border-color: #1CA7EC;
+    border-radius: 20px;
+
+    #headerLogo{
+        position: relative;
+        left: 30px;
+        top: 7px;
+        width: 45px;
+    }
+
+    #logoText{
+        font-family: $myFont;
+        @extend #headerLogo;
+        width: fit-content;
+        font-size: 10px;
+        margin-top: 2px;
+        left: 24px;
+    }
+
+    #pageHeader{
+        font-family: $myFont;
+        position: absolute;
+        left: 450px;
+        top: -10px;
+    }
+
+    #settingsIcon{
+        position: absolute;
+        left: 1070px;
+        top: 10.5px;
+        width: 50px;
     }
 }
