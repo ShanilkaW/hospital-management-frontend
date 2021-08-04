@@ -129,6 +129,7 @@ body{
 
     #documents{
         @extend #findPatients;
+    }
 
     #calender{
         @extend #documents;
