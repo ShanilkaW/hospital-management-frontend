@@ -16,50 +16,46 @@
     </div>
 
     <div id="header">
-        <img id="headerLogo" src="../common/imgs/Heart.png" alt="Logo Icon">
-        <h1 id="logoText">HiNFO DESK</h1>
-        <h1 id="pageHeader">DASHBOARD</h1>
-        <img id="settingsIcon" src="imgs/settings.png" alt="Settings icon">
+        <img onclick="window.history.back();" id="backIcon" src="../common/icons/backIcon.png" alt="Back Icon">
+        <h1 id="pageHeader">FIND PATIENTS</h1>
     </div>
 
-    <div id="mobileOnly">
-        <img id="propic" src="imgs/propic.png" alt="profile picture">
-        <h1>Dr. W.D.K.Weerasinghe</h1>
-        <p>An Admin Profile</p>
-        <p>M.B.B.S at University of Colombo</p>
-        <img id="menu" src="icons/menu.png" alt="">
-    </div>
+    <div id="searchform">
+        <form action="../patient_list/patient_list.html">
+            <label id="nameLabel" for="name">Name</label> <br>
+            <input type="text" id="name" name="name"><br>
 
-    <div id="buttonList">
-        <div onclick="location.href='../find_patients/find_patients.html';" id="findPatients">
-            <img src="icons/findPatients.png" alt="Find patients icon">
-            <h5>Find Patients</h5>
-        </div>
+            <label id="wardLabel" for="ward">Ward</label><br>
+            <select name="ward" id="ward">
+            <option value="All">All</option>
+            <option value="0023">0023</option>
+            <option value="0024">0024</option>
+            </select><br>
 
-        <div id="messages">
-            <img src="icons/messages.png" alt="Messages icon">
-            <h5>Messages</h5>
-        </div>
+            <label id="sectionLabel" for="section">Section</label><br>
+            <select name="section" id="section">
+            <option value="All">All</option>
+            <option value="Cardialogy">Cardialogy</option>
+            <option value="ENT">ENT</option>
+            </select><br>
 
-        <div id="directories">
-            <img src="icons/directories.png" alt="Directories icon">
-            <h5>Directories</h5>
-        </div>
+            <label id="locationLabel" for="location">Location</label><br>
+            <select name="location" id="location">
+            <option value="All">All</option>
+            <option value="Galle">Galle</option>
+            <option value="Gampaha">Gampaha</option>
+            </select><br>
 
-        <div id="appoinments">
-            <img src="icons/appoinments.png" alt=" Appoinments icon">
-            <h5>Appoinments</h5>
-        </div>
+            <label id="deptLabel" for="dept">Department</label><br>
+            <select name="dept" id="dept">
+            <option value="All">All</option>
+            <option value="Department01">Department 01</option>
+            <option value="Department02">Department 02</option>
+            </select><br>
 
-        <div id="calender">
-            <img src="icons/calender.png" alt="Calender icon">
-            <h5>Calender</h5>
-        </div>
+            <input type="submit" value="FIND" id="find">
 
-        <div id="documents">
-            <img src="icons/documents.png" alt="Dcouments icon">
-            <h5>Documents</h5>
-        </div>
+        </form>
     </div>
 </body>
 </html>

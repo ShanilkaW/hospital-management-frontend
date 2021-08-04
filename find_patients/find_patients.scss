@@ -54,20 +54,9 @@ body{
     border-color: #1CA7EC;
     border-radius: 20px;
 
-    #headerLogo{
+    #backIcon{
         position: relative;
-        left: 30px;
-        top: 7px;
-        width: 45px;
-    }
-
-    #logoText{
-        font-family: $myFont;
-        @extend #headerLogo;
-        width: fit-content;
-        font-size: 10px;
-        margin-top: 2px;
-        left: 24px;
+        top: 4px;
     }
 
     #pageHeader{
@@ -76,66 +65,53 @@ body{
         left: 450px;
         top: -10px;
     }
-
-    #settingsIcon{
-        position: absolute;
-        left: 1070px;
-        top: 10.5px;
-        width: 50px;
-    }
 }
 
-#buttonList{
+#searchform{
     position: absolute;
     top: 120px;
     left: 440px;
     width: 1000px;
     height: 600px;
-    align-self: center;
 
-    #findPatients{
+    label{
+        font-family: $myFont;
+        margin-bottom: 400px;
+        font-size: 17px;
+    }
+
+    input{
         width: 1000px;
-        height: 70px;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        outline: none; 
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    #find{
+        width: 100px;
+        height: 35px;
+        position: relative;
+        left: 900px;
+        top: -10px;
+        border: none;
+        background-color: #1F2F98;
+        color: #FFF;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 20px;
+    }
+
+    select{
+        width: 1000px;
+        font-family: $myFont;
+        margin-bottom: 55px;
+        @extend input;
+    }
+
+    option{
         background-color: #1CA7EC;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        cursor: pointer;
-
-        img{
-            width: 45px;
-            height: 45px;
-            position: relative;
-            left: 20px;
-            top: 18%;
-        }
-
-        h5{
-            display: inline;
-            position: relative;
-            left: 30px;
-            top: -3px;
-            font-family: $myFont;
-            font-size: 20px;
-        }
-    }
-
-    #messages{
-        @extend #findPatients;
-    }
-
-    #directories{
-        @extend #findPatients;
-    }
-
-    #documents{
-        @extend #findPatients;
-    }
-
-    #calender{
-        @extend #documents;
-    }
-
-    #appoinments{
-        @extend #documents;
     }
 }
