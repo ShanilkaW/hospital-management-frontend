@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="patient_list.css">
     <title>Patient List</title>
 </head>
 <body>
+    <div id="sidebar">
+        <img src="../common/imgs/propic.png" alt="profile picture">
+        <h1>Dr. W.D.K.Weerasinghe</h1>
+        <p>An Admin Profile</p>
+        <p>M.B.B.S at University of Colombo</p>
+    </div>
+
+    <div id="header">
+        <img onclick="window.history.back();" id="backIcon" src="../common/icons/backIcon.png" alt="Back Icon">
+        <h1 id="pageHeader">FIND PATIENTS</h1>
+    </div>
+
+    <div id="buttonList">
+        <div onclick="location.href='../find_patients/find_patients.html';" id="findPatients">
+            <img src="icons/findPatients.png" alt="Find patients icon">
+            <h5>Find Patients</h5>
+        </div>
+
+        <div id="messages">
+            <img src="icons/messages.png" alt="Messages icon">
+            <h5>Messages</h5>
+        </div>
+
+        <div id="directories">
+            <img src="icons/directories.png" alt="Directories icon">
+            <h5>Directories</h5>
+        </div>
+
+        <div id="appoinments">
+            <img src="icons/appoinments.png" alt=" Appoinments icon">
+            <h5>Appoinments</h5>
+        </div>
+
+        <div id="calender">
+            <img src="icons/calender.png" alt="Calender icon">
+            <h5>Calender</h5>
+        </div>
+
+        <div id="documents">
+            <img src="icons/documents.png" alt="Dcouments icon">
+            <h5>Documents</h5>
+        </div>
+    </div>
     
 </body>
 </html>
