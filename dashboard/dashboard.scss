@@ -178,9 +178,9 @@ body{
 
     @media only screen and (max-width: 450px){
         left: 0px;
-        background-color: wheat;
+        // background-color: wheat;
         width: 398px;
-        display: none;
+        // display: none;
     } 
 
     #findPatients{
@@ -199,7 +199,7 @@ body{
             border-style: solid;
             border-color: #1CA7EC;
             display: -ms-inline-grid;
-            background-color: rgb(67, 65, 170);
+            // background-color: rgb(67, 65, 170);
         } 
 
         img{
@@ -212,7 +212,7 @@ body{
             @media only screen and (max-width: 450px){
                 left: 50px;
                 top: 5px;
-                background-color: red;
+                // background-color: red;
             } 
         }
 
@@ -230,8 +230,6 @@ body{
                top: -25px;
                left: 18px;
                width: fit-content;
-               background-color: wheat;
-               text-align: match-parent;
             } 
         }
     }
@@ -246,6 +244,8 @@ body{
 
     #documents{
         @extend #findPatients;
+        @media only screen and (max-width: 450px){
+         } 
     }
 
     #calender{
