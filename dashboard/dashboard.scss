@@ -180,6 +180,8 @@ body{
         left: 0px;
         // background-color: wheat;
         width: 398px;
+        position: relative;
+        top: 30px;
         // display: none;
     } 
 
@@ -192,13 +194,14 @@ body{
         cursor: pointer;
 
         @media only screen and (max-width: 450px){
+            position: relative;
+            left: 30px;
             width: 150px;
             height: 90px;
             background-color: transparent;
             border: 3px;
             border-style: solid;
             border-color: #1CA7EC;
-            display: -ms-inline-grid;
             // background-color: rgb(67, 65, 170);
         } 
 
@@ -245,14 +248,17 @@ body{
     #documents{
         @extend #findPatients;
         @media only screen and (max-width: 450px){
-         } 
+            position: relative;
+            left: 200px;
+            top: -346px;
+        } 
     }
 
     #calender{
-        @extend #findPatients;
+        @extend #documents;
     }
 
     #appoinments{
-        @extend #findPatients;
+        @extend #documents;
     }
 }

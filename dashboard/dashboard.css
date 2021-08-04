@@ -170,9 +170,11 @@ body {
   #buttonList {
     left: 0px;
     width: 398px;
+    position: relative;
+    top: 30px;
   }
 }
-#buttonList #findPatients, #buttonList #appoinments, #buttonList #calender, #buttonList #documents, #buttonList #directories, #buttonList #messages {
+#buttonList #findPatients, #buttonList #documents, #buttonList #appoinments, #buttonList #calender, #buttonList #directories, #buttonList #messages {
   width: 1000px;
   height: 70px;
   background-color: #1CA7EC;
@@ -181,17 +183,18 @@ body {
   cursor: pointer;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #findPatients, #buttonList #appoinments, #buttonList #calender, #buttonList #documents, #buttonList #directories, #buttonList #messages {
+  #buttonList #findPatients, #buttonList #documents, #buttonList #appoinments, #buttonList #calender, #buttonList #directories, #buttonList #messages {
+    position: relative;
+    left: 30px;
     width: 150px;
     height: 90px;
     background-color: transparent;
     border: 3px;
     border-style: solid;
     border-color: #1CA7EC;
-    display: -ms-inline-grid;
   }
 }
-#buttonList #findPatients img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #documents img, #buttonList #directories img, #buttonList #messages img {
+#buttonList #findPatients img, #buttonList #documents img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #directories img, #buttonList #messages img {
   width: 45px;
   height: 45px;
   position: relative;
@@ -199,12 +202,12 @@ body {
   top: 18%;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #findPatients img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #documents img, #buttonList #directories img, #buttonList #messages img {
+  #buttonList #findPatients img, #buttonList #documents img, #buttonList #appoinments img, #buttonList #calender img, #buttonList #directories img, #buttonList #messages img {
     left: 50px;
     top: 5px;
   }
 }
-#buttonList #findPatients h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #documents h5, #buttonList #directories h5, #buttonList #messages h5 {
+#buttonList #findPatients h5, #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #directories h5, #buttonList #messages h5 {
   display: inline;
   position: relative;
   left: 30px;
@@ -213,11 +216,18 @@ body {
   font-size: 20px;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #findPatients h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #documents h5, #buttonList #directories h5, #buttonList #messages h5 {
+  #buttonList #findPatients h5, #buttonList #documents h5, #buttonList #appoinments h5, #buttonList #calender h5, #buttonList #directories h5, #buttonList #messages h5 {
     display: block;
     top: -25px;
     left: 18px;
     width: fit-content;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #documents, #buttonList #appoinments, #buttonList #calender {
+    position: relative;
+    left: 200px;
+    top: -346px;
   }
 }
 
