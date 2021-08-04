@@ -43,4 +43,56 @@ body {
   }
 }
 
+#header {
+  width: 1130px;
+  height: 70px;
+  position: absolute;
+  left: 370px;
+  top: 0px;
+  border: 4px;
+  border-style: solid;
+  border-color: #1CA7EC;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 450px) {
+  #header {
+    left: 0px;
+    width: 375px;
+    height: 40px;
+    border: 2px;
+    border-style: solid;
+    border-color: #1CA7EC;
+    border-radius: 20px;
+  }
+}
+#header #backIcon {
+  position: relative;
+  top: 4px;
+}
+@media only screen and (max-width: 450px) {
+  #header #backIcon {
+    left: 0px;
+    width: 35px;
+  }
+}
+#header #refreshIcon {
+  position: relative;
+  left: 990px;
+  top: -5px;
+  width: 50px;
+}
+#header #pageHeader {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  left: 450px;
+  top: -10px;
+}
+@media only screen and (max-width: 450px) {
+  #header #pageHeader {
+    left: 125px;
+    font-size: 18px;
+    top: -4px;
+  }
+}
+
 /*# sourceMappingURL=patient_list.css.map */
