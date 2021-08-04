@@ -4,6 +4,10 @@
         width: 1515px;
         filter: blur(5px);
         opacity: 75%;
+
+        @media only screen and (max-width: 350px){
+            scale: 0.1;
+        }
     }
 }
 
@@ -51,7 +55,7 @@
     z-index: 1;
     // background-color: wheat;
     left: 1020px;
-    top: 180px;
+    top: 145px;
     #shade{
         height: 400px;
         width: 450px;
