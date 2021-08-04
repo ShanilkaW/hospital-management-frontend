@@ -85,3 +85,80 @@ body{
         width: 50px;
     }
 }
+
+#buttonList{
+    // Button background variables
+    $buttonWidth: 1000px;
+    $buttonHeight: 70px;
+    $buttonBackgroundColor: #1CA7EC;
+    $buttonBackgroundOpacity: 56%;
+    $buttonBoarderRadius: 15px;
+    $buttonMargin: 20px;
+
+    // Button icon variables
+    $iconWidth: 45px;
+    $iconHeight: $iconWidth;
+    $iconLeft: 20px;
+    $iconTop: 18%;
+
+    // Button text variables
+    $textLeft: 30px;
+    $textTop: -3px;
+    $textSize: 20px;
+
+    // Button list properties
+    // background-color: wheat;
+    position: absolute;
+    top: 120px;
+    left: 440px;
+    width: 1000px;
+    height: 600px;
+    align-self: center;
+
+    #findPatients{
+        width: $buttonWidth;
+        height: $buttonHeight;
+        background-color: $buttonBackgroundColor;
+        border-radius: $buttonBoarderRadius;
+        margin-bottom: $buttonMargin;
+
+        img{
+            width: $iconWidth;
+            height: $iconHeight;
+            position: relative;
+            left: $iconLeft;
+            top: $iconTop;
+            // background-color: wheat;
+        }
+
+        h5{
+            display: inline;
+            position: relative;
+            left: $textLeft;
+            top: $textTop;
+            font-family: $myFont;
+            font-size: $textSize;
+            // background-color: wheat;
+        }
+    }
+
+    #messages{
+        @extend #findPatients;
+    }
+
+    #directories{
+        @extend #findPatients;
+    }
+
+    #documents{
+        @extend #findPatients;
+    }
+
+    #calender{
+        @extend #findPatients;
+    }
+
+    #appoinments{
+        @extend #findPatients;
+    }
+}
