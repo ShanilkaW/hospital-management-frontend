@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="links.js"></script>
+    <title>Dashboard</title>
 </head>
 <body>
-    
+    <div id="sidebar">
+        <img src="imgs/propic.png" alt="profile picture">
+        <h1>Dr. W.D.K.Weerasinghe</h1>
+        <p>An Admin Profile</p>
+        <p>M.B.B.S at University of Colombo</p>
+    </div>
+
+    <div id="header">
+        <img id="headerLogo" src="../common/imgs/Heart.png" alt="Logo Icon">
+        <h1 id="logoText">HiNFO DESK</h1>
+        <h1 id="pageHeader">DASHBOARD</h1>
+        <img id="settingsIcon" src="imgs/settings.png" alt="Settings icon">
+    </div>
+
+    <div id="buttonList">
+        <div onclick="location.href='../find_patients/find_patients.html';" id="findPatients">
+            <img src="icons/findPatients.png" alt="Find patients icon">
+            <h5>Find Patients</h5>
+        </div>
+
+        <div id="messages">
+            <img src="icons/messages.png" alt="Messages icon">
+            <h5>Messages</h5>
+        </div>
+
+        <div id="directories">
+            <img src="icons/directories.png" alt="Directories icon">
+            <h5>Directories</h5>
+        </div>
+
+        <div id="documents">
+            <img src="icons/documents.png" alt="Dcouments icon">
+            <h5>Documents</h5>
+        </div>
+
+        <div id="calender">
+            <img src="icons/calender.png" alt="Calender icon">
+            <h5>Calender</h5>
+        </div>
+
+        <div id="appoinments">
+            <img src="icons/appoinments.png" alt=" Appoinments icon">
+            <h5>Appoinments</h5>
+        </div>
+    </div>
 </body>
 </html>
