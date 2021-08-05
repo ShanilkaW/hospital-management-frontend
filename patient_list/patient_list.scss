@@ -95,3 +95,123 @@ body{
         cursor: pointer;
     }
 }
+
+#patientList{
+    position: absolute;
+    top: 170px;
+    left: 440px;
+    width: 1000px;
+    height: 600px;
+    align-self: center;
+
+    @media only screen and (max-width: 450px){
+        left: 0px;
+        width: 398px;
+        position: relative;
+        top: 30px;
+    } 
+
+    div{
+        width: 1000px;
+        height: 65px;
+        background-color: #1ca7ec;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        @media only screen and (max-width: 450px){
+            position: relative;
+            left: 30px;
+            width: 150px;
+            height: 90px;
+            background-color: transparent;
+            border: 3px;
+            border-style: solid;
+            border-color: #1CA7EC;
+        }
+        
+        #id{
+            width: 150px;
+            height: 30px;
+            background-color: transparent;
+            position: relative;
+            top: -37px;
+            left: 250px;
+            border: black;
+            border-style: solid;
+            border-radius: 11px;
+            
+            p{
+                background-color: black;
+                color: white;
+                padding: 3px;
+                padding-inline: 10px;
+                border-radius: 10px;
+                position: relative;
+                top: 1px;
+                left: -1px;
+                font-size: 20px;
+            }
+
+            span{
+                position: relative;
+                top: -1px;
+                left: 0px;
+                font-family: $myFont;
+            }
+        }
+
+        #ward{
+            @extend #id;
+            width: 90px;
+            left: 450px;
+            top: -92px;
+        }
+
+        #time{
+            @extend #id;
+            width: 120px;
+            left: 595px;
+            top: -147px;
+
+            p{
+                padding-inline: 13px;
+            }
+        }
+
+        #status{
+            position: relative;
+            top: 100px;
+        }
+
+        img{
+            width: 45px;
+            height: 45px;
+            position: relative;
+            left: 14px;
+            top: 15%;
+
+            @media only screen and (max-width: 450px){
+                left: 50px;
+                top: 7px;
+            } 
+        }
+
+        p{
+            display: inline;
+            position: relative;
+            left: 20px;
+            top: -5px;
+            font-family: $myFont;
+            font-size: 22px;
+            font-weight: 700;
+            
+            @media only screen and (max-width: 450px){
+               display: block;
+               top: -25px;
+               left: 18px;
+               width: fit-content;
+            } 
+        }
+    }
+}
