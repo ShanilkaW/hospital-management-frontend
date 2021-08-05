@@ -118,28 +118,46 @@ body{
 
     @media only screen and (max-width: 450px){
         left: 10px;
-        top: 630px;
+        top: 610px;
         width: 360px;
+        
     }
 
-    img{
-        width: 40px;
-        height: 40px;
-        border: black;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 5px;
-        cursor: pointer;
-    }
+    div{
 
-    span{
-        position: relative;
-        left: -25px;
-        top: 15px;
-        font-family: $myFont;
-        font-size: 20px;
-        font-weight: 700;
-        cursor: pointer;
+        img{
+            width: 40px;
+            height: 40px;
+            border: black;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+            
+            @media only screen and (max-width: 450px){
+                display: flex;
+                margin: auto;
+            }
+        }
+
+        span{
+            position: relative;
+            left: 5px;
+            top: -20px;
+            font-family: $myFont;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+
+            @media only screen and (max-width: 450px){
+                left: 0px;
+                top: 0px;
+                font-size: 12.5px;
+                display: flex;
+                justify-content: center;
+
+            }
+        }
     }
 }
 
