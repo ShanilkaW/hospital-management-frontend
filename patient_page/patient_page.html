@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="patient_page.css">
+    <title>Patient Page</title>
 </head>
 <body>
+    <div id="sidebar">
+        <img src="../common/imgs/propic.png" alt="profile picture">
+        <h1>Dr. W.D.K.Weerasinghe</h1>
+        <p>An Admin Profile</p>
+        <p>M.B.B.S at University of Colombo</p>
+    </div>
+
+    <div id="header">
+        <img onclick="window.history.back();" id="backIcon" src="../common/icons/backIcon.png" alt="Back Icon">
+        <h1 id="pageHeader">K.K.A. Jayanath</h1>
+        <img onClick="window.location.reload();" id="refreshIcon" src="../common/icons/refresh.png" alt="refresh button">
+    </div>
+
+    <div id="buttonArray">
+        <div>
+            <img id="dashboard" src="icons/dashboard.png" alt="">
+            <span>Dashboard</span>
+        </div>
+
+        <div>
+            <img id="document" src="icons/document.png" alt="">
+            <span>Document</span>
+        </div>
+
+        <div>
+            <img id="info" src="icons/info.png" alt="">
+            <span>Info</span>
+        </div>
+
+        <div>
+            <img id="notifications" src="icons/notifications.png" alt="">
+            <span>Notifications</span>
+        </div>
+    </div>
+
+    <div id="buttonList">
+        <div id="medplan">
+            <img src="icons/medplan.png" alt="Find patients icon">
+            <h5>Find Patients</h5>
+        </div>
+
+        <div id="labResult">
+            <img src="icons/lab results.png" alt="Messages icon">
+            <h5>Messages</h5>
+        </div>
+
+        <div id="lege">
+            <img src="icons/lege.png" alt="Directories icon">
+            <h5>Directories</h5>
+        </div>
+
+        <div id="spl">
+            <img src="icons/spl.png" alt=" Appoinments icon">
+            <h5>Appoinments</h5>
+        </div>
+
+        <div id="order">
+            <img src="icons/Order.png" alt="Calender icon">
+            <h5>Calender</h5>
+        </div>
+
+        <div id="visits">
+            <img src="icons/Visits.png" alt="Dcouments icon">
+            <h5>Documents</h5>
+        </div>
+
+        <div id="pinfo">
+            <img src="icons/Patient info.png" alt="Dcouments icon">
+            <h5>Documents</h5>
+        </div>
+
+        <div id="refferals">
+            <img src="icons/referrles.png" alt="Dcouments icon">
+            <h5>Documents</h5>
+        </div>
+    </div>
     
 </body>
 </html>

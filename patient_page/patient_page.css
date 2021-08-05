@@ -1,0 +1,278 @@
+body {
+  position: fixed;
+}
+
+#sidebar {
+  width: 350px;
+  height: 700px;
+  border: 4px;
+  border-style: solid;
+  border-color: #1CA7EC;
+  border-radius: 20px;
+}
+#sidebar img {
+  width: 170px;
+  height: auto;
+  position: absolute;
+  left: 89px;
+  top: 60px;
+  border-style: solid;
+  border-color: #1CA7EC;
+  border-radius: 50%;
+}
+#sidebar h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 35%;
+  text-align: center;
+}
+#sidebar p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  top: 33%;
+  margin-bottom: -18px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 450px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+#header {
+  width: 1130px;
+  height: 70px;
+  position: absolute;
+  left: 370px;
+  top: 0px;
+  border: 4px;
+  border-style: solid;
+  border-color: #1CA7EC;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 450px) {
+  #header {
+    left: 0px;
+    width: 375px;
+    height: 40px;
+    border: 2px;
+    border-style: solid;
+    border-color: #1CA7EC;
+    border-radius: 20px;
+  }
+}
+#header #backIcon {
+  position: relative;
+  top: 4px;
+}
+@media only screen and (max-width: 450px) {
+  #header #backIcon {
+    left: 0px;
+    width: 35px;
+  }
+}
+#header #refreshIcon {
+  position: relative;
+  left: 990px;
+  top: -5px;
+  width: 50px;
+}
+@media only screen and (max-width: 450px) {
+  #header #refreshIcon {
+    left: 295px;
+    width: 35px;
+    top: 3px;
+  }
+}
+#header #pageHeader {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  left: 450px;
+  top: -10px;
+}
+@media only screen and (max-width: 450px) {
+  #header #pageHeader {
+    left: 125px;
+    font-size: 18px;
+    top: -4px;
+  }
+}
+
+#buttonArray {
+  position: absolute;
+  top: 90px;
+  left: 440px;
+  width: 1000px;
+  height: 60px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 450px) {
+  #buttonArray {
+    left: 10px;
+    top: 610px;
+    width: 360px;
+    background-color: white;
+    z-index: 1;
+  }
+}
+#buttonArray div img {
+  width: 40px;
+  height: 40px;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  #buttonArray div img {
+    display: flex;
+    margin: auto;
+  }
+}
+#buttonArray div span {
+  position: relative;
+  left: 5px;
+  top: -20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  #buttonArray div span {
+    left: 0px;
+    top: 3px;
+    font-size: 12.5px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#buttonList {
+  position: absolute;
+  top: 170px;
+  left: 440px;
+  width: 1000px;
+  height: 600px;
+  align-self: center;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList {
+    left: 0px;
+    width: 398px;
+    position: relative;
+    top: 30px;
+  }
+}
+#buttonList #buttonArray {
+  position: absolute;
+  top: 90px;
+  left: 440px;
+  width: 1000px;
+  height: 60px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #buttonArray {
+    left: 10px;
+    top: 610px;
+    width: 360px;
+    background-color: white;
+    z-index: 1;
+  }
+}
+#buttonList #buttonArray div img {
+  width: 40px;
+  height: 40px;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #buttonArray div img {
+    display: flex;
+    margin: auto;
+  }
+}
+#buttonList #buttonArray div span {
+  position: relative;
+  left: 5px;
+  top: -20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #buttonArray div span {
+    left: 0px;
+    top: 3px;
+    font-size: 12.5px;
+    display: flex;
+    justify-content: center;
+  }
+}
+#buttonList #medplan, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #order, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
+  width: 1000px;
+  height: 70px;
+  background-color: #1CA7EC;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #medplan, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #order, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
+    position: relative;
+    left: 30px;
+    width: 150px;
+    height: 90px;
+    background-color: transparent;
+    border: 3px;
+    border-style: solid;
+    border-color: #1CA7EC;
+  }
+}
+#buttonList #medplan img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #order img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 20px;
+  top: 18%;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #medplan img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #order img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
+    left: 50px;
+    top: 7px;
+  }
+}
+#buttonList #medplan h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #order h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
+  display: inline;
+  position: relative;
+  left: 30px;
+  top: -3px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #medplan h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #order h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
+    display: block;
+    top: -25px;
+    left: 18px;
+    width: fit-content;
+  }
+}
+
+/*# sourceMappingURL=patient_page.css.map */
