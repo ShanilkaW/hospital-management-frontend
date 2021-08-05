@@ -172,10 +172,10 @@ body{
     align-self: center;
 
     @media only screen and (max-width: 450px){
-        left: 0px;
+        left: -10px;
         width: 398px;
         position: relative;
-        top: 30px;
+        top: 100px;
     } 
 
     #buttonArray{
@@ -197,51 +197,14 @@ body{
         z-index: 1;
         
     }
-
-    div{
-
-        img{
-            width: 40px;
-            height: 40px;
-            border: black;
-            border-style: solid;
-            border-radius: 10px;
-            padding: 5px;
-            cursor: pointer;
-            
-            @media only screen and (max-width: 450px){
-                display: flex;
-                margin: auto;
-            }
-        }
-
-        span{
-            position: relative;
-            left: 5px;
-            top: -20px;
-            font-family: $myFont;
-            font-size: 20px;
-            font-weight: 700;
-            cursor: pointer;
-
-            @media only screen and (max-width: 450px){
-                left: 0px;
-                top: 3px;
-                font-size: 12.5px;
-                display: flex;
-                justify-content: center;
-
-            }
-        }
-    }
 }
 
     #medplan{
         width: 1000px;
-        height: 70px;
+        height: 55px;
         background-color: #1CA7EC;
         border-radius: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         cursor: pointer;
 
         @media only screen and (max-width: 450px){
@@ -253,11 +216,12 @@ body{
             border: 3px;
             border-style: solid;
             border-color: #1CA7EC;
+            margin-bottom: 30px;
         } 
 
         img{
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             position: relative;
             left: 20px;
             top: 18%;
@@ -279,38 +243,79 @@ body{
             @media only screen and (max-width: 450px){
                display: block;
                top: -25px;
-               left: 18px;
+               left: 9px;
                width: fit-content;
+               font-size: 18px;
             } 
         }
     }
 
     #labResult{
         @extend #medplan;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 26px;
+            } 
+        }
     }
 
     #lege{
         @extend #medplan;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #spl{
         @extend #medplan;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #order{
         @extend #medplan;
+        @media only screen and (max-width: 450px){
+            position: relative;
+            left: 210px;
+            top: -503px;
+        }
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 45px;
+            } 
+        }
     }
 
     #visits{
-        @extend #medplan;
+        @extend #order;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #pinfo{
-        @extend #medplan;
+        @extend #order;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 24px;
+            } 
+        }
     }
 
     #refferals{
-        @extend #medplan;
+        @extend #order;
+        h5{
+            @media only screen and (max-width: 450px){
+               left: 35px;
+            } 
+        }
     }
 }
 

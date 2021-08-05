@@ -166,10 +166,10 @@ body {
 }
 @media only screen and (max-width: 450px) {
   #buttonList {
-    left: 0px;
+    left: -10px;
     width: 398px;
     position: relative;
-    top: 30px;
+    top: 100px;
   }
 }
 #buttonList #buttonArray {
@@ -192,49 +192,16 @@ body {
     z-index: 1;
   }
 }
-#buttonList #buttonArray div img {
-  width: 40px;
-  height: 40px;
-  border: black;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 5px;
-  cursor: pointer;
-}
-@media only screen and (max-width: 450px) {
-  #buttonList #buttonArray div img {
-    display: flex;
-    margin: auto;
-  }
-}
-#buttonList #buttonArray div span {
-  position: relative;
-  left: 5px;
-  top: -20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  cursor: pointer;
-}
-@media only screen and (max-width: 450px) {
-  #buttonList #buttonArray div span {
-    left: 0px;
-    top: 3px;
-    font-size: 12.5px;
-    display: flex;
-    justify-content: center;
-  }
-}
-#buttonList #medplan, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #order, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
+#buttonList #medplan, #buttonList #order, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
   width: 1000px;
-  height: 70px;
+  height: 55px;
   background-color: #1CA7EC;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #medplan, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #order, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
+  #buttonList #medplan, #buttonList #order, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits, #buttonList #spl, #buttonList #lege, #buttonList #labResult {
     position: relative;
     left: 30px;
     width: 150px;
@@ -243,22 +210,23 @@ body {
     border: 3px;
     border-style: solid;
     border-color: #1CA7EC;
+    margin-bottom: 30px;
   }
 }
-#buttonList #medplan img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #order img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
-  width: 45px;
-  height: 45px;
+#buttonList #medplan img, #buttonList #order img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
+  width: 40px;
+  height: 40px;
   position: relative;
   left: 20px;
   top: 18%;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #medplan img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #order img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
+  #buttonList #medplan img, #buttonList #order img, #buttonList #refferals img, #buttonList #pinfo img, #buttonList #visits img, #buttonList #spl img, #buttonList #lege img, #buttonList #labResult img {
     left: 50px;
     top: 7px;
   }
 }
-#buttonList #medplan h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #order h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
+#buttonList #medplan h5, #buttonList #order h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
   display: inline;
   position: relative;
   left: 30px;
@@ -267,11 +235,54 @@ body {
   font-size: 20px;
 }
 @media only screen and (max-width: 450px) {
-  #buttonList #medplan h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #order h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
+  #buttonList #medplan h5, #buttonList #order h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5, #buttonList #spl h5, #buttonList #lege h5, #buttonList #labResult h5 {
     display: block;
     top: -25px;
-    left: 18px;
+    left: 9px;
     width: fit-content;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #labResult h5 {
+    left: 26px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #lege h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #spl h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #order, #buttonList #refferals, #buttonList #pinfo, #buttonList #visits {
+    position: relative;
+    left: 210px;
+    top: -503px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #order h5, #buttonList #refferals h5, #buttonList #pinfo h5, #buttonList #visits h5 {
+    left: 45px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #visits h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #pinfo h5 {
+    left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #buttonList #refferals h5 {
+    left: 35px;
   }
 }
 
