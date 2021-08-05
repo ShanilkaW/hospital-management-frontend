@@ -41,10 +41,6 @@ body{
         letter-spacing: 2px;
         font-weight: 400;
     }
-
-    @media only screen and (max-width: 450px){
-        display: none;
-    }
 }
 
 #header{
@@ -58,24 +54,9 @@ body{
     border-color: #1CA7EC;
     border-radius: 20px;
 
-    @media only screen and (max-width: 450px){
-        left: 0px;
-        width: 375px;
-        height: 40px;
-        border: 2px;
-        border-style: solid;
-        border-color: #1CA7EC;
-        border-radius: 20px;
-    } 
-
     #backIcon{
         position: relative;
         top: 4px;
-
-        @media only screen and (max-width: 450px){
-            left: 0px;
-            width: 35px;
-        } 
     }
 
     #refreshIcon{
@@ -90,11 +71,27 @@ body{
         position: absolute;
         left: 450px;
         top: -10px;
+    }
+}
 
-        @media only screen and (max-width: 450px){
-            left: 125px;
-            font-size: 18px;
-            top: -4px;
-        } 
+#buttonArray{
+    position: absolute;
+    top: 90px;
+    left: 440px;
+    width: 1000px;
+    height: 60px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+        width: 40px;
+        height: 40px;
+        border: black;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 5px;
+        cursor: pointer;
     }
 }

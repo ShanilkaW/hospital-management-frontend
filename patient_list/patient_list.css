@@ -37,11 +37,6 @@ body {
   letter-spacing: 2px;
   font-weight: 400;
 }
-@media only screen and (max-width: 450px) {
-  #sidebar {
-    display: none;
-  }
-}
 
 #header {
   width: 1130px;
@@ -54,26 +49,9 @@ body {
   border-color: #1CA7EC;
   border-radius: 20px;
 }
-@media only screen and (max-width: 450px) {
-  #header {
-    left: 0px;
-    width: 375px;
-    height: 40px;
-    border: 2px;
-    border-style: solid;
-    border-color: #1CA7EC;
-    border-radius: 20px;
-  }
-}
 #header #backIcon {
   position: relative;
   top: 4px;
-}
-@media only screen and (max-width: 450px) {
-  #header #backIcon {
-    left: 0px;
-    width: 35px;
-  }
 }
 #header #refreshIcon {
   position: relative;
@@ -87,12 +65,26 @@ body {
   left: 450px;
   top: -10px;
 }
-@media only screen and (max-width: 450px) {
-  #header #pageHeader {
-    left: 125px;
-    font-size: 18px;
-    top: -4px;
-  }
+
+#buttonArray {
+  position: absolute;
+  top: 90px;
+  left: 440px;
+  width: 1000px;
+  height: 60px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#buttonArray img {
+  width: 40px;
+  height: 40px;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=patient_list.css.map */
