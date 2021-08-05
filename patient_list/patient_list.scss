@@ -41,6 +41,10 @@ body{
         letter-spacing: 2px;
         font-weight: 400;
     }
+
+    @media only screen and (max-width: 450px){
+        display: none;
+    }
 }
 
 #header{
@@ -54,9 +58,24 @@ body{
     border-color: #1CA7EC;
     border-radius: 20px;
 
+    @media only screen and (max-width: 450px){
+        left: 0px;
+        width: 375px;
+        height: 40px;
+        border: 2px;
+        border-style: solid;
+        border-color: #1CA7EC;
+        border-radius: 20px;
+    } 
+
     #backIcon{
         position: relative;
         top: 4px;
+
+        @media only screen and (max-width: 450px){
+            left: 0px;
+            width: 35px;
+        }
     }
 
     #refreshIcon{
@@ -64,6 +83,12 @@ body{
         left: 990px;
         top: -5px;
         width: 50px;
+
+        @media only screen and (max-width: 450px){
+            left: 295px;
+            width: 35px;
+            top: 3px;
+        }
     }
 
     #pageHeader{
@@ -71,6 +96,12 @@ body{
         position: absolute;
         left: 450px;
         top: -10px;
+
+        @media only screen and (max-width: 450px){
+            left: 125px;
+            font-size: 18px;
+            top: -4px;
+        } 
     }
 }
 
@@ -84,6 +115,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media only screen and (max-width: 450px){
+        left: 10px;
+        top: 630px;
+        width: 360px;
+    }
 
     img{
         width: 40px;
@@ -104,13 +141,6 @@ body{
     height: 600px;
     align-self: center;
 
-    @media only screen and (max-width: 450px){
-        left: 0px;
-        width: 398px;
-        position: relative;
-        top: 30px;
-    } 
-
     div{
         width: 1000px;
         height: 65px;
@@ -118,17 +148,6 @@ body{
         border-radius: 15px;
         margin-bottom: 20px;
         cursor: pointer;
-
-        @media only screen and (max-width: 450px){
-            position: relative;
-            left: 30px;
-            width: 150px;
-            height: 90px;
-            background-color: transparent;
-            border: 3px;
-            border-style: solid;
-            border-color: #1CA7EC;
-        }
         
         #id{
             width: 150px;
@@ -204,11 +223,6 @@ body{
             position: relative;
             left: 14px;
             top: 15%;
-
-            @media only screen and (max-width: 450px){
-                left: 50px;
-                top: 7px;
-            } 
         }
 
         p{
@@ -219,13 +233,6 @@ body{
             font-family: $myFont;
             font-size: 22px;
             font-weight: 700;
-            
-            @media only screen and (max-width: 450px){
-               display: block;
-               top: -25px;
-               left: 18px;
-               width: fit-content;
-            } 
         }
     }
 }
