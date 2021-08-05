@@ -106,7 +106,7 @@ body {
 #patientList div {
   width: 1000px;
   height: 65px;
-  background-color: #1ca7ec;
+  background-color: rgba(28, 167, 236, 0.4);
   border-radius: 15px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -166,7 +166,20 @@ body {
 }
 #patientList div #status {
   position: relative;
-  top: 100px;
+  top: -223px;
+  left: 790px;
+  background-color: #1CA7EC;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  padding-top: 8px;
+  padding-inline: 10px;
+}
+#patientList div #next {
+  transform: rotate(180deg);
+  position: relative;
+  top: -205px;
+  left: 850px;
 }
 #patientList div img {
   width: 45px;
